@@ -1,0 +1,7 @@
+<h1>Jogo da Velha</h1>
+<div class="quadro">
+  <div *ngFor="let cel of cells; let i = index" (click)="fazerJogada(i)">
+    {{cel}}
+  </div>
+</div>
+<button (click)="reset()">Reset</button>
