@@ -1,7 +1,10 @@
-<h1>Jogo da Velha</h1>
-<div class="quadro">
-  <div *ngFor="let cel of cells; let i = index" (click)="fazerJogada(i)">
-    {{cel}}
+<mat-card>
+  <h1>Jogo da Velha</h1>
+  <div class="quadro">
+    <div *ngFor="let cel of cells; let i = index" (click)="fazerJogada(i)">
+      {{cel}}
+    </div>
   </div>
-</div>
-<button (click)="reset()">Reset</button>
+
+  <button mat-flat-button color="primary" (click)="reset()">Reset</button>
+</mat-card>
